@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+ztsa_project/runtime/
+*.aux
+*.log
+*.out
+*.synctex.gz
+~$*

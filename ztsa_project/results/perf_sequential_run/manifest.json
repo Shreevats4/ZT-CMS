@@ -1,0 +1,20 @@
+{
+  "requests_per_instance": 100,
+  "repetitions": 3,
+  "load_processes": 8,
+  "concurrency": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "cpu_count": 16,
+  "paper": {
+    "requests_per_instance": 1000,
+    "repetitions": 10
+  }
+}

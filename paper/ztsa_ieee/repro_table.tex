@@ -1,0 +1,15 @@
+\begin{table}[t]\caption{Decision time at 64 concurrent requests: paper vs.\ our reproduction}\label{tab:repro}\centering\small\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrr}\toprule
+PIP & Configuration & Paper (ms) & Ours (ms)\\\midrule
+DB & additive \& static RL & 296 & 55.26\\
+DB & SL \& static RL & 294 & 59.01\\
+DB & additive \& dynamic RL & 317 & 56.17\\
+DB & SL \& dynamic RL & 316 & 60.23\\
+DB & ZT-CMS (ours) & -- & 63.03\\
+\midrule
+Cache & additive \& static RL & 126 & 54.94\\
+Cache & SL \& static RL & 126 & 58.58\\
+Cache & additive \& dynamic RL & 133 & 55.52\\
+Cache & SL \& dynamic RL & 133 & 60.30\\
+Cache & ZT-CMS (ours) & -- & 62.79\\
+\bottomrule\end{tabular}\end{table}

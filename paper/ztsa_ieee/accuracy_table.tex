@@ -1,0 +1,17 @@
+\begin{table*}[t]\caption{Decision accuracy on five unseen test enterprises (mean $\pm$ s.d.). Calibrated: threshold fixed on a separate enterprise to deny 1\% of benign requests.}\label{tab:acc}\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccccc}\toprule
+ & \multicolumn{2}{c}{Paper rule (trust exceeds risk)} & \multicolumn{6}{c}{Calibrated (1\% benign denial target)}\\\cmidrule(lr){2-3}\cmidrule(lr){4-9}
+Algorithm & Recall & Benign deny & AUC & Recall & Benign deny & F1 & Episodes det. & Exposure\\\midrule
+Additive-static & 0.000 & 0.000 & 0.791$\pm$0.010 & 0.207 & 0.005 & 0.335 & 0.253 & 26.0\\
+Additive-dynamic & 0.000 & 0.000 & 0.800$\pm$0.016 & 0.208 & 0.006 & 0.336 & 0.277 & 25.4\\
+\midrule
+SL-static & 0.000 & 0.000 & 0.753$\pm$0.012 & 0.205 & 0.007 & 0.331 & 0.250 & 26.1\\
+SL-dynamic & 0.005 & 0.000 & 0.748$\pm$0.018 & 0.146 & 0.007 & 0.247 & 0.261 & 25.9\\
+\midrule
+SL-dyn + CV & 0.055 & 0.000 & 0.819$\pm$0.019 & 0.167 & 0.007 & 0.278 & 0.372 & 24.2\\
+SL-dyn + MS & 0.081 & 0.000 & 0.852$\pm$0.008 & 0.319 & 0.007 & 0.471 & 0.733 & 13.7\\
+SL-dyn + LP & 0.062 & 0.000 & 0.765$\pm$0.014 & 0.226 & 0.007 & 0.358 & 0.689 & 12.6\\
+SL-dyn + CV+MS & 0.130 & 0.000 & 0.891$\pm$0.009 & 0.336 & 0.007 & 0.490 & 0.771 & 13.3\\
+\midrule
+\textbf{ZT-CMS (ours)} & 0.156 & 0.000 & 0.888$\pm$0.009 & 0.340 & 0.007 & 0.493 & 0.770 & 11.1\\
+\bottomrule\end{tabular}\end{table*}
